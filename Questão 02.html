@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+<body>
+    <script>
+        let preço = parseFloat(prompt("Informe o preço normal do produto: "))  
+    
+        let condiçao = parseInt(prompt("Informe o código de condição do pagamento: "))
+
+        let valorFinal
+
+        switch (condiçao) {
+        case 1:
+            valorFinal = preço * 0.9
+            break;
+        case 2:
+            valorFinal  preço * 0.85
+            break
+        case 3:
+            vaçlorFinal: preço * 1.1
+            break
+        default:
+            alert("Código de condição de pagamento inválido.")
+        }
+
+    if (valorFinal) {
+       alert("Valor a ser pago: R$ " + valorFinal.toFixed(2))
+   }
+    </script>
+</body>
+</html>

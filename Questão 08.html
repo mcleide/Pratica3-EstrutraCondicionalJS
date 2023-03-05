@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 08</title>
+</head>
+<body>
+    <script>
+let velocidadeCarro = parseFloat(prompt("Digite a velocidade do carro em km/h:"));
+let velocidadeMaxima = parseFloat(prompt("Digite a velocidade máxima permitida na rua em km/h:"));
+
+let diferencaVelocidade = velocidadeCarro - velocidadeMaxima;
+
+
+if (diferencaVelocidade <= 10) {
+  alert("Multa de R$50,00.");
+} else if (diferencaVelocidade > 10 && diferencaVelocidade <= 30) {
+  alert("Multa de R$100,00.");
+} else {
+  alert("Multa de R$300,00.");
+}
+
+    </script>
+</body>
+</html>

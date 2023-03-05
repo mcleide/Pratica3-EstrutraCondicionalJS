@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+<body>
+    <script>
+        const idAluno = prompt("Digite aqui o número de indicação do aluno: ")
+        const nota1 = parseFloat(prompt("Informe a primeira nota do aluno: "))
+        const nota2 = parseFloat(prompt("Informe a segunda nota do aluno: "))
+        const nota3 = parseFloat(prompt("Informe a terceira nota do aluno: "))
+        const mediaExerc = parseFloat(prompt("Informe a média de exercícios do aluno: "))
+
+        const mediaAproveitamento = (nota1 + nota2 * 2 + nota3 *mediaExerc) / 7
+
+        let conceito
+        if (mediaAproveitamento >= 90) {
+            conceito = "A"
+        } else if (mediaAproveitamento >= 70) {
+            conceito = "B"
+        } else if (mediaAproveitamento >= 60) {
+            conceito = "C"
+        } else if (mediaAproveitamento >= 40) {
+            conceito = "D"
+        } else {
+            conceito = "E"
+        }
+
+        alert("Número do aluno: " + idAluno)
+        alert("Notas: " + nota1 + ", " + nota2 + ", " + nota3)
+        alert("Média dos exercícios: " + mediaExerc)
+        alert("Média de aproveitamneto: " + mediaAproveitamento)
+        alert("Conceito: " + conceito);
+        if (conceito === "A" || conceito === "B" || conceito === "C") {
+        console.log("Aprovado");
+        } else {
+        console.log("Reprovado");
+        }
+        
+    </script>
+</body>
+</html>
